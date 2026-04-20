@@ -1,0 +1,38 @@
+═══════════════════════════════════════════════════════════════
+  OPTIONAL: ORIGINAL-FONTS NACHRÜSTEN (Cormorant Garamond + Jost)
+  YogaJoy · Martina Knieps
+═══════════════════════════════════════════════════════════════
+
+Die Website funktioniert perfekt mit System-Fonts (Georgia).
+Wenn du aber die eleganten Original-Fonts haben möchtest,
+mach das hier (ca. 5 Minuten):
+
+SCHRITT 1 – Öffne: https://gwfh.mranftl.com/fonts
+
+SCHRITT 2 – Cormorant Garamond:
+  - Im Suchfeld "Cormorant Garamond" eingeben
+  - Klicken
+  - Charsets: nur "latin" anhaken
+  - Styles: 400, 400italic, 500
+  - CSS: "Modern Browsers" wählen
+  - Download files
+
+SCHRITT 3 – Jost:
+  - "Jost" suchen und klicken
+  - Charsets: "latin"
+  - Styles: 300, 400, 500
+  - CSS: "Modern Browsers" wählen
+  - Download files
+
+SCHRITT 4 – ZIPs entpacken und alle .woff2-Dateien
+  in diesen Ordner (fonts/) legen.
+
+SCHRITT 5 – fonts.css öffnen und den auskommentierten
+  @font-face-Block aktivieren (Kommentarzeichen /* */ entfernen)
+  und die Dateinamen an die tatsächlichen anpassen.
+
+FERTIG.
+
+Bei Unsicherheit: Schreib Claude mit "Fonts nachrüsten" und den
+Dateinamen, die du bekommen hast - dann wird das für dich erledigt.
+═══════════════════════════════════════════════════════════════

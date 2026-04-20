@@ -1,0 +1,134 @@
+═══════════════════════════════════════════════════════════════════════
+  ✿  YogaJoy Website – Finale Version
+      Anleitung für Martina
+═══════════════════════════════════════════════════════════════════════
+
+
+ALLES IST FERTIG – DU MUSST NUR NOCH HOCHLADEN.
+
+
+═══════════════════════════════════════════════════════════════════════
+  WAS NEU IST
+═══════════════════════════════════════════════════════════════════════
+
+✓ Navigation-Logo größer (95 px) und hochauflösend
+✓ Hero-Bereich: Großes YogaJoy-Logo oben rechts über dem Titel
+✓ "MY BODY. MY POWER." komplett entfernt
+✓ Neue Überschrift: "Schmerzfrei & ausgeglichen durch Yoga"
+✓ Neuer Hero-Text: "Entdecke mit mir deinen Weg zu 
+  körperlichem Wohlbefinden und innerer Balance..."
+✓ Dalai-Lama-Zitat ersetzt durch Sri Sri Ravi Shankar:
+  "Yoga bringt dich in den gegenwärtigen Moment – 
+   den einzigen Ort, an dem Leben existiert."
+✓ Footer-Spruch: "Ein neuer Weg entsteht, indem man ihn geht."
+✓ "Wettkampf" → "Wettbewerb" bei "Freude, nicht Leistung"
+✓ Neue Sektion "Good Karma Club Bensberg" mit 2 Studio-Fotos 
+  hinter den Kursen
+✓ Fotografen-Hinweis "Fotos © Sylvia Mielcarek" im Footer 
+  und Impressum
+✓ Navigation und Footer um Studio-Link erweitert
+
+
+═══════════════════════════════════════════════════════════════════════
+  SCHRITT 1 · ZIP ENTPACKEN
+═══════════════════════════════════════════════════════════════════════
+
+• Doppelklick auf die ZIP-Datei "yogajoy-website.zip"
+• Ordner "yogajoy" erscheint auf deinem PC
+
+
+═══════════════════════════════════════════════════════════════════════
+  SCHRITT 2 · TESTEN (empfohlen!)
+═══════════════════════════════════════════════════════════════════════
+
+• Doppelklick auf "index.html"
+• Öffnet sich im Browser
+• Alles durchscrollen, Menü testen
+• Wenn etwas nicht passt → mir sagen, ich passe es an.
+
+
+═══════════════════════════════════════════════════════════════════════
+  SCHRITT 3 · BEI STRATO HOCHLADEN
+═══════════════════════════════════════════════════════════════════════
+
+• Einloggen bei: https://www.strato.de/apps/CustomerService
+• Im Kundenbereich: "Webspace" / "Datei-Verwaltung" öffnen
+• In das Hauptverzeichnis gehen (heißt meist "htdocs", "html" 
+  oder "www")
+• Alte index.html (falls vorhanden) LÖSCHEN
+• Aus dem yogajoy-Ordner ALLE Dateien UND Unterordner (bilder, 
+  fonts) markieren (Strg+A) und hochladen – NICHT den Ordner 
+  selbst!
+
+Ergebnis auf dem Strato-Server:
+┌─────────────────────────────────┐
+│ htdocs/ (oder html/)             │
+│   ├── index.html                 │
+│   ├── impressum.html             │
+│   ├── datenschutz.html           │
+│   ├── robots.txt                 │
+│   ├── sitemap.xml                │
+│   ├── bilder/                    │
+│   └── fonts/                     │
+└─────────────────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════════════
+  SCHRITT 4 · WEBSITE AUFRUFEN
+═══════════════════════════════════════════════════════════════════════
+
+• Browser: deine Domain eingeben
+• Seite sollte erscheinen 🎉
+• Falls nicht sofort: Strg+F5 drücken (Cache leeren)
+  und ggf. 5-30 Minuten warten
+
+
+═══════════════════════════════════════════════════════════════════════
+  EINMALIG BEI STRATO ERLEDIGEN (DSGVO)
+═══════════════════════════════════════════════════════════════════════
+
+Auftragsverarbeitungsvertrag (AVV) mit Strato abschließen 
+(kostenlos, 2 Minuten):
+
+• Strato-Kundenbereich → "Auftragsverarbeitung" / "AVV" suchen
+• Dokument elektronisch abschließen
+• Bestätigung speichern
+
+
+═══════════════════════════════════════════════════════════════════════
+  WAS NOCH OFFEN IST
+═══════════════════════════════════════════════════════════════════════
+
+1. Fotografen-Einverständnis schriftlich von Sylvia Mielcarek 
+   einholen (Screenshot einer WhatsApp/E-Mail reicht).
+   Muster-Text:
+   "Hey Sylvia, ich verwende auf meiner Website yogajoy.de 
+   deine Fotos und möchte dich wie folgt erwähnen: 
+   'Fotos © Sylvia Mielcarek' im Footer und Impressum. 
+   Bist du damit einverstanden?"
+
+2. Google Search Console: Domain registrieren, damit Google 
+   die Seite schneller findet. → https://search.google.com/search-console
+
+
+═══════════════════════════════════════════════════════════════════════
+  PROBLEME? HÄUFIGE FÄLLE
+═══════════════════════════════════════════════════════════════════════
+
+❌ "Meine Domain zeigt noch eine alte Seite"
+   → Strg+Shift+Del (Cache leeren)
+   
+❌ "Bilder werden nicht angezeigt"
+   → Ordner "bilder" mit kleinem b – nicht "Bilder"!
+     
+❌ "Seite sieht kaputt aus"
+   → Ordner "fonts" mit "fonts.css" muss hochgeladen sein
+
+
+═══════════════════════════════════════════════════════════════════════
+  FRAGEN ODER WEITERE ÄNDERUNGEN?
+═══════════════════════════════════════════════════════════════════════
+
+Schreib mir einfach. 🌿
+Namasté, M.
+═══════════════════════════════════════════════════════════════════════

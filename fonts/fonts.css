@@ -1,0 +1,12 @@
+/*
+  YogaJoy – Font-Definitionen
+  ============================
+  
+  Die Website nutzt System-Fonts (Georgia + System-Sans).
+  Das ist DSGVO-konform, schnell und sieht sehr elegant aus.
+  
+  Falls du später die Original-Fonts (Cormorant Garamond + Jost) möchtest,
+  schau in die Datei "_FONTS_UPGRADE.txt" im gleichen Ordner.
+*/
+
+/* Keine @font-face Regeln aktiv - Fallbacks aus style.css werden genutzt */
