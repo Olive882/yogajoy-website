@@ -3,4 +3,4 @@ Allow: /
 Disallow: /impressum.html
 Disallow: /datenschutz.html
 
-Sitemap: https://www.yogajoy.de/sitemap.xml
+Sitemap: https://www.yogajoy.me/sitemap.xml
