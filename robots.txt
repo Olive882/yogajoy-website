@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /impressum.html
-Disallow: /datenschutz.html
 
-Sitemap: https://www.yogajoy.me/sitemap.xml
+Sitemap: https://yogajoy.me/sitemap.xml
