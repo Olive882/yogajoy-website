@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YogaJoy Bensberg | Yoga bei Rückenschmerzen – Martina Knieps</title>
-    <meta name="description" content="Yoga in Bensberg & online. Zertifizierte Yogalehrerin Martina Knieps hilft dir, durch achtsames Yoga schmerzfrei & stark zu werden. Schnupperstunde 5 €.">
+    <meta name="description" content="Yoga in Bensberg & online. Zertifizierte Yogalehrerin Martina Knieps. Yoga als Balsam für Körper & Seele – Kraft, Beweglichkeit und innere Ruhe. Schnupperstunde 10 €.">
     <meta name="keywords" content="Yoga Bensberg, Yoga Bergisch Gladbach, Yoga bei Rückenschmerzen, Good Karma Club Bensberg, Online Yoga Kurs, Betriebliches Gesundheitsmanagement Yoga, YogaJoy, Martina Knieps">
     <meta name="author" content="Martina Knieps – YogaJoy">
     <meta name="robots" content="index, follow">
 
     <meta property="og:title" content="YogaJoy Bensberg | Yoga mit Martina Knieps">
-    <meta property="og:description" content="Schmerzfrei & stark durch Yoga – in Bensberg und online. Schnupperstunde für nur 5 €.">
+    <meta property="og:description" content="Yoga als Balsam für Körper & Seele – in Bensberg und online. Schnupperstunde für nur 10 €.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="de_DE">
     <meta property="og:image" content="bilder/portrait.jpg">
@@ -110,10 +110,29 @@
         .about-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 80px; align-items: center; }
         .about-image-wrap { position: relative; }
         .about-image-wrap img { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow); display: block; }
-        .cert-badge { position: absolute; bottom: -20px; left: 40px; background: var(--white); border-radius: 12px; padding: 20px 30px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); text-align: center; }
-        .cert-badge strong { display: block; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.6rem; color: var(--black); }
-        .cert-badge span { color: var(--accent); font-size: 0.7rem; letter-spacing: 0.1em; font-weight: 500; }
+        .cert-badge { position: absolute; bottom: -20px; left: 40px; background: var(--white); border-radius: 12px; padding: 18px 26px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); text-align: center; }
+        .cert-badge strong { display: block; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.2rem; color: var(--black); font-weight: 500; line-height: 1.3; }
+        .cert-badge strong + strong { margin-top: 4px; }
+        .akasha-link { color: var(--accent-dark); text-decoration: none; transition: color 0.2s; }
+        .akasha-link:hover { color: var(--black); text-decoration: underline; }
         .about-text p { margin-bottom: 20px; font-size: 1.05rem; color: var(--mid); }
+        .about-more { max-height: 0; overflow: hidden; transition: max-height 0.6s ease-in-out; }
+        .about-more.open { max-height: 2000px; }
+        .about-toggle {
+            background: none; border: none; padding: 0; cursor: pointer;
+            font-family: 'Jost', sans-serif; font-size: 0.8rem; font-weight: 500;
+            letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent-dark);
+            display: inline-flex; align-items: center; gap: 10px;
+            margin: 10px 0 0; transition: color 0.2s;
+        }
+        .about-toggle:hover { color: var(--black); }
+        .about-toggle-icon {
+            display: inline-flex; align-items: center; justify-content: center;
+            width: 28px; height: 28px; border-radius: 50%;
+            background: var(--beige); font-size: 1.2rem; font-weight: 300;
+            transition: transform 0.3s;
+        }
+        .about-toggle[aria-expanded="true"] .about-toggle-icon { transform: rotate(45deg); }
 
         .about-second { background: var(--beige); padding: 120px 8%; display: grid; grid-template-columns: 1.1fr 1fr; gap: 80px; align-items: center; }
         .about-second img { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow); display: block; }
@@ -132,8 +151,10 @@
         .panorama-break img { width: 100%; height: 100%; object-fit: cover; display: block; }
         @media (max-width: 768px) { .panorama-break { height: 240px; } }
 
-        .trial-highlight { background: var(--accent); color: white; text-align: center; padding: 25px 20px; border-radius: 12px; margin-bottom: 40px; font-weight: 500; letter-spacing: 0.05em; box-shadow: 0 10px 25px rgba(184, 168, 152, 0.3); font-size: 1.05rem; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.6; }
-        .trial-highlight strong { font-size: 1.25rem; display: inline-block; margin-bottom: 8px; }
+        .trial-highlight { background: var(--accent); color: white; text-align: center; padding: 28px 24px; border-radius: 12px; margin-bottom: 40px; box-shadow: 0 10px 25px rgba(184, 168, 152, 0.3); max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.5; display: block; text-decoration: none; transition: all 0.3s; cursor: pointer; }
+        .trial-highlight:hover { transform: translateY(-4px); box-shadow: 0 15px 35px rgba(184, 168, 152, 0.45); background: var(--accent-dark); }
+        .trial-highlight strong { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.8rem; font-weight: 500; display: block; margin-bottom: 8px; letter-spacing: 0.02em; }
+        .trial-highlight span { font-size: 0.95rem; display: block; opacity: 0.95; letter-spacing: 0.05em; }
         .course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
         .course-card { background: var(--white); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; transition: all 0.4s; border: 1px solid var(--silver); position: relative; }
         .course-card:hover { transform: translateY(-10px); box-shadow: 0 20px 50px rgba(0,0,0,0.1); border-color: var(--accent); }
@@ -191,6 +212,41 @@
         .gallery-item:hover img { transform: scale(1.08); }
         @media (max-width: 900px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
 
+        /* Instagram Highlight Section */
+        .insta-section { background: linear-gradient(135deg, var(--beige) 0%, var(--offwhite) 100%); }
+        .insta-grid { display: grid; grid-template-columns: 0.85fr 1fr; gap: 60px; align-items: center; max-width: 1200px; margin: 0 auto; }
+        .insta-reel-link { display: block; text-decoration: none; color: inherit; position: relative; }
+        .insta-reel-visual { position: relative; aspect-ratio: 9 / 16; border-radius: var(--radius); overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.15); transition: transform 0.4s; max-width: 380px; margin: 0 auto; }
+        .insta-reel-link:hover .insta-reel-visual { transform: translateY(-6px); box-shadow: 0 25px 60px rgba(0,0,0,0.2); }
+        .insta-reel-visual img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .insta-play-overlay { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 100%); transition: background 0.3s; }
+        .insta-reel-link:hover .insta-play-overlay { background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.55) 100%); }
+        .insta-play-btn { width: 80px; height: 80px; border-radius: 50%; background: rgba(255,255,255,0.95); display: flex; align-items: center; justify-content: center; color: var(--accent-dark); transition: transform 0.3s; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        .insta-play-btn svg { width: 36px; height: 36px; margin-left: 4px; }
+        .insta-reel-link:hover .insta-play-btn { transform: scale(1.1); }
+        .insta-watch-label { color: white; font-size: 0.8rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 500; }
+        .insta-badge { position: absolute; top: 16px; left: 16px; background: rgba(255,255,255,0.95); padding: 8px 14px; border-radius: 50px; display: flex; align-items: center; gap: 8px; font-size: 0.8rem; font-weight: 500; color: var(--dark); }
+        .insta-badge svg { width: 16px; height: 16px; color: var(--accent-dark); }
+        .insta-text h3 { font-size: 2rem; color: var(--black); margin-bottom: 15px; font-family: 'Cormorant Garamond', Georgia, serif; }
+        .insta-hook { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.5rem; line-height: 1.4; color: var(--black); font-style: italic; margin-bottom: 20px; }
+        .insta-text p { color: var(--mid); margin-bottom: 15px; font-size: 1rem; line-height: 1.7; }
+        .insta-event-box { background: var(--white); border-radius: var(--radius); padding: 24px; margin: 25px 0; box-shadow: var(--shadow); border-left: 3px solid var(--accent); }
+        .insta-event-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--fog); font-size: 0.95rem; }
+        .insta-event-row:last-child { border-bottom: none; }
+        .insta-event-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--light); font-weight: 500; }
+        .insta-event-row span:last-child { color: var(--dark); font-weight: 500; text-align: right; }
+        .insta-cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 25px; }
+        .insta-small { font-size: 0.85rem; color: var(--light); margin-top: 18px; }
+        .insta-small a { color: var(--accent-dark); text-decoration: none; font-weight: 500; }
+        .insta-small a:hover { text-decoration: underline; }
+        @media (max-width: 900px) {
+            .insta-grid { grid-template-columns: 1fr; gap: 40px; }
+            .insta-reel-visual { max-width: 320px; }
+            .insta-text { text-align: center; }
+            .insta-cta-row { justify-content: center; }
+            .insta-event-row { text-align: left; }
+        }
+
         #contact { background: var(--beige); text-align: center; }
         .contact-container { max-width: 900px; margin: 0 auto; }
         .contact-container h2 { color: var(--beige-text); }
@@ -216,7 +272,8 @@
         .footer-statement { text-align: center; font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.8rem, 3vw, 2.4rem); letter-spacing: 0.1em; margin-bottom: 60px; padding-bottom: 60px; border-bottom: 1px solid rgba(255,255,255,0.1); }
         .footer-statement span { color: var(--accent); font-style: italic; }
         .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 60px; margin-bottom: 60px; }
-        .footer-logo { height: 220px; width: 220px; margin-bottom: 25px; background: var(--white); padding: 0; border-radius: 50%; display: block; object-fit: contain; }
+        .footer-logo { height: 280px; width: 280px; margin-bottom: 25px; background: var(--white); padding: 0; border-radius: 50%; display: block; object-fit: contain; }
+        .footer-tagline { color: var(--light); max-width: 320px; }
         .footer-col h4 { font-size: 1.2rem; margin-bottom: 25px; color: var(--accent); }
         .footer-links { list-style: none; }
         .footer-links li { margin-bottom: 12px; }
@@ -261,11 +318,16 @@
             .hamburger { display: flex; }
             section { padding: 80px 6%; }
             .about-second { padding: 80px 6%; }
-            .footer-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+            .footer-logo-col { display: flex; flex-direction: column; align-items: center; }
+            .footer-tagline { display: none; }
+            .footer-links { display: inline-block; text-align: left; }
             .btn-wa { bottom: 20px; right: 20px; padding: 10px 18px; font-size: 0.75rem; }
             .btn-wa svg { width: 16px; height: 16px; }
-            nav { height: 85px; padding: 0 5%; }
+            nav { height: 85px; padding: 0 5%; justify-content: center; }
+            .hamburger { position: absolute; right: 5%; }
             .mobile-menu { inset: 85px 0 0 0; }
+            .logo-link { justify-content: center; }
             .logo { height: 65px; }
             .logo-text { display: none; }
         }
@@ -274,9 +336,9 @@
 <body>
 
 <div class="trust-bar">
-    <span>✓ 400h RYS Zertifiziert</span>
+    <span>✓ Zertifiziert · Akasha Veda Yoga School</span>
     <span>✓ Yoga in Bensberg & Online</span>
-    <span>✓ Schnupperstunde nur 5 €</span>
+    <span>✓ Schnupperstunde nur 10 €</span>
 </div>
 
 <button class="btn-wa" id="waTrigger" aria-label="Auf WhatsApp schreiben">
@@ -305,6 +367,7 @@
         <li><a href="#studio">Studio</a></li>
         <li><a href="#corporate">Unternehmen</a></li>
         <li><a href="#testimonials">Stimmen</a></li>
+        <li><a href="#instagram">Events</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#contact" class="nav-cta">Platz sichern</a></li>
     </ul>
@@ -320,6 +383,7 @@
     <a href="#studio" onclick="closeMenu()">Studio</a>
     <a href="#corporate" onclick="closeMenu()">Unternehmen</a>
     <a href="#testimonials" onclick="closeMenu()">Stimmen</a>
+    <a href="#instagram" onclick="closeMenu()">Events</a>
     <a href="#contact" onclick="closeMenu()">Kontakt</a>
 </div>
 
@@ -329,10 +393,10 @@
     </div>
     <div class="hero-content-col">
         <p class="hero-eyebrow">Yoga · Bensberg & Online</p>
-        <h1>Schmerzfrei & ausgeglichen durch <em>Yoga</em></h1>
-        <p class="hero-sub">Entdecke mit mir deinen Weg zu körperlichem Wohlbefinden und innerer Balance. Individuelles Yoga in Bensberg und online – für ein Leben ohne Beschwerden.</p>
+        <h1>Yoga ist Balsam für <em>Deinen Körper & Deine Seele</em></h1>
+        <p class="hero-sub">Entdecke mit mir die positiven Effekte von Yoga: Yoga stärkt deinen Körper, verbessert deine Beweglichkeit und Balance und hilft dir, Stress abzubauen und innere Ruhe zu finden.</p>
         <div class="hero-cta-group">
-            <a href="#courses" class="btn btn-accent">Schnupperstunde für 5 €</a>
+            <a href="#courses" class="btn btn-accent">Schnupperstunde für 10 €</a>
             <a href="#about" class="btn btn-outline">Meine Geschichte</a>
         </div>
     </div>
@@ -343,16 +407,24 @@
         <div class="about-image-wrap">
             <img src="bilder/portrait.jpg" alt="Martina Knieps – Zertifizierte Yogalehrerin im Lotussitz">
             <div class="cert-badge">
-                <strong>400h RYS</strong>
-                <span>Zertifizierte Yogalehrerin</span>
+                <strong>Zertifizierte Yogalehrerin</strong>
+                <strong><a href="https://www.instagram.com/akasha.veda" target="_blank" rel="noopener" class="akasha-link">Akasha Veda Yoga School</a></strong>
             </div>
         </div>
         <div class="about-text">
             <span class="section-label">Über mich</span>
             <h2 class="section-title">Ich bin Martina</h2>
-            <p>Seit meinem 25. Lebensjahr begleiteten mich chronische Rückenschmerzen. Nach Jahren mit Bandscheiben-OP, Physiotherapie und Medikamenten – alles ohne dauerhaften Erfolg – fand ich zum Yoga.</p>
-            <p>Heute bin ich <strong>zu 100 % beschwerdefrei</strong>. Diese Erfahrung treibt mich an: Ich möchte dir zeigen, wie du durch achtsame Bewegung und Atemarbeit deine eigenen Selbstheilungskräfte aktivierst.</p>
-            <p>Meine Yoga-Stunden sind ein sicherer Raum, um den Alltagsstress hinter dir zu lassen, auf deinen Körper zu hören und neue Kraft zu schöpfen – ganz gleich, ob du Einsteiger bist oder schon Erfahrung mitbringst.</p>
+            <p>Aufgewachsen in Köln und heute zu Hause in Bergisch Gladbach, wo ich mit meinem Mann und meinen fast erwachsenen Söhnen lebe. Ich liebe es, Zeit in der Natur zu verbringen – Joggen am Rheinufer, Inlineskaten am Fühlinger See oder ausgedehnte Spaziergänge durch den Königsforst, am liebsten mit meinem „Leih-Hund" Carlos.</p>
+            <p>Als gebürtige Rheinländerin bin ich auch ein echter Karnevalsjeck und mag die Lebensfreude und das bisschen Verrücktsein des Fastelovends.</p>
+            <div class="about-more" id="aboutMore">
+                <p>In meinem Leben gab es aber auch die ein oder andere Herausforderung zu meistern. Im hektischen Alltag zwischen Muttersein und anspruchsvollem Job in der Finanzwelt litt ich immer mehr unter starken Rückenschmerzen. Physiotherapie, Medikamente, Bandscheiben-OP – nichts brachte am Ende Linderung.</p>
+                <p>Die Begegnung mit der indischen Yogaschule <a href="https://www.instagram.com/akasha.veda" target="_blank" rel="noopener" class="akasha-link">Akasha Veda</a> wurde für mich zum Wendepunkt. Durch Yoga habe ich nicht nur meine Schmerzen hinter mir gelassen, sondern auch einen neuen Zugang zu mir und den Umgang mit meinem Körper gefunden. Heute bin ich durch Yoga <strong>zu 100 % beschwerdefrei</strong>.</p>
+                <p>Meine positive Erfahrung hat mich motiviert, selbst Yogalehrerin zu werden und mich bei <a href="https://www.instagram.com/akasha.veda" target="_blank" rel="noopener" class="akasha-link">Akasha Veda</a> ausbilden zu lassen. Heute ist es mir eine Herzensangelegenheit, meine Erfahrungen weiterzugeben und Menschen dabei zu begleiten, die positiven Wirkungen von Yoga in ihr Leben zu bringen.</p>
+            </div>
+            <button class="about-toggle" id="aboutToggle" aria-expanded="false" aria-controls="aboutMore">
+                <span class="about-toggle-text">Meine Geschichte lesen</span>
+                <span class="about-toggle-icon">+</span>
+            </button>
             <a href="#contact" class="btn btn-outline" style="margin-top:20px;">Lerne mich kennen</a>
         </div>
     </div>
@@ -390,9 +462,10 @@
     <div class="center">
         <span class="section-label">Dein Einstieg</span>
         <h2 class="section-title">Yoga-Kurse & Coaching</h2>
-        <div class="trial-highlight">
-            ✨ <strong>Schnupperstunde für nur 5 €</strong><br>Lerne meinen Yoga-Stil ganz unverbindlich kennen!
-        </div>
+        <a href="#contact" class="trial-highlight">
+            <strong>Schnupperstunde für nur 10 €</strong>
+            <span>Lerne meinen Yoga-Stil ganz unverbindlich kennen</span>
+        </a>
     </div>
 
     <div class="course-grid">
@@ -434,14 +507,14 @@
         </div>
 
         <div class="course-card">
-            <img src="bilder/galerie3.jpg" alt="Personal Yoga Coaching – individuelle 1:1 Betreuung" class="course-img">
+            <img src="bilder/galerie3.jpg" alt="Yoga Specials – Freundinnen-Events und Familienyoga" class="course-img">
             <div class="course-body">
-                <span class="course-tag">Exklusiv · 1:1 Coaching</span>
-                <h3>Personal Coaching</h3>
+                <span class="course-tag">Exklusiv · Yoga Specials</span>
+                <h3>Yoga Specials</h3>
                 <div class="course-info">
-                    <div class="detail"><span class="detail-label">Fokus</span><span>Ganz auf dich abgestimmt</span></div>
-                    <div class="detail"><span class="detail-label">Ort</span><span>Heimbesuch oder Online</span></div>
-                    <div class="detail"><span class="detail-label">Ideal bei</span><span>Rücken-/Gelenkproblemen</span></div>
+                    <div class="detail"><span class="detail-label">Fokus</span><span>Freundinnen-Events & Familienyoga</span></div>
+                    <div class="detail"><span class="detail-label">Ort</span><span>Good Karma Club</span></div>
+                    <div class="detail"><span class="detail-label">Ideal als</span><span>Geschenkidee</span></div>
                 </div>
                 <div class="course-footer">
                     <div class="price" style="font-size:1.1rem; color:var(--light)">Auf Anfrage</div>
@@ -472,11 +545,6 @@
             <span class="section-label">Betriebliches Gesundheitsmanagement</span>
             <h2 class="section-title">Yoga für Unternehmen</h2>
             <p>Rückenschmerzen, Verspannungen, Stress – das sind die häufigsten Ursachen für Krankheitstage im Büro. Mit wöchentlichem Yoga direkt am Arbeitsplatz oder online investierst du in die Gesundheit und Motivation deines Teams.</p>
-
-            <div class="corporate-reference">
-                <strong>Aktuelle Referenz</strong>
-                <p style="margin:0; color:var(--dark); font-style:italic;">Ich unterrichte aktuell wöchentlich in einem Architekturbüro – mit durchweg positiver Resonanz und spürbaren Effekten auf Wohlbefinden und Teamgeist.</p>
-            </div>
 
             <ul class="corporate-benefits">
                 <li>Weniger Rücken- und Nackenbeschwerden</li>
@@ -537,6 +605,45 @@
     </div>
 </section>
 
+<!-- ── INSTAGRAM HIGHLIGHT: SELFCARE SATURDAY ── -->
+<section id="instagram" class="insta-section" data-aos>
+    <div class="center">
+        <span class="section-label">Aktuelles Event · Instagram</span>
+        <h2 class="section-title">Selfcare Saturday</h2>
+    </div>
+    <div class="insta-grid">
+        <a href="https://www.instagram.com/reel/DTLndpYDJpk/" target="_blank" rel="noopener" class="insta-reel-link" aria-label="Instagram Reel Selfcare Saturday ansehen">
+            <div class="insta-reel-visual">
+                <img src="bilder/studio1.jpg" alt="Selfcare Saturday – Good Karma Club Bensberg">
+                <div class="insta-play-overlay">
+                    <div class="insta-play-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                    <span class="insta-watch-label">Reel ansehen</span>
+                </div>
+                <div class="insta-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    @yogajoy_
+                </div>
+            </div>
+        </a>
+        <div class="insta-text">
+            <p class="insta-hook">Tauche ein in die Magie des Moments und erlebe Yoga im wunderschönen Good Karma Club in Bensberg.</p>
+            <p><strong>2 Stunden nur für Dich.</strong><br>Für Deine Regeneration, Deine Stärke und Deine innere Balance.</p>
+            <div class="insta-event-box">
+                <div class="insta-event-row"><span class="insta-event-label">Wann</span><span>Samstag, 25. April 2026 · 16 – 18 Uhr</span></div>
+                <div class="insta-event-row"><span class="insta-event-label">Wo</span><span>Good Karma Club, Bensberg</span></div>
+                <div class="insta-event-row"><span class="insta-event-label">Preis</span><span>50 € inkl. Getränke</span></div>
+            </div>
+            <div class="insta-cta-row">
+                <a href="mailto:yogajoy@web.de?subject=Anmeldung%20Selfcare%20Saturday%2025.04.2026" class="btn btn-accent">Jetzt anmelden</a>
+                <a href="https://www.instagram.com/reel/DTLndpYDJpk/" target="_blank" rel="noopener" class="btn btn-outline">Reel ansehen</a>
+            </div>
+            <p class="insta-small">Oder per DM auf Instagram: <a href="https://www.instagram.com/yogajoy_/" target="_blank" rel="noopener">@yogajoy_</a></p>
+        </div>
+    </div>
+</section>
+
 <section id="faq" data-aos>
     <div class="center">
         <span class="section-label">Fragen?</span>
@@ -561,7 +668,7 @@
         </div>
         <div class="faq-item">
             <button class="faq-question">Wie läuft die Schnupperstunde ab? <span class="faq-icon">+</span></button>
-            <div class="faq-answer"><div class="faq-answer-inner">Die Schnupperstunde für 5 € ist dein unverbindlicher Einstieg. Du nimmst an einer regulären Stunde teil und lernst meinen Stil kennen. Einfach per WhatsApp oder E-Mail Platz reservieren.</div></div>
+            <div class="faq-answer"><div class="faq-answer-inner">Die Schnupperstunde für 10 € ist dein unverbindlicher Einstieg. Du nimmst an einer regulären Stunde teil und lernst meinen Stil kennen. Einfach per WhatsApp oder E-Mail Platz reservieren.</div></div>
         </div>
         <div class="faq-item">
             <button class="faq-question">Bietest du Yoga auch für Unternehmen an? <span class="faq-icon">+</span></button>
@@ -603,9 +710,8 @@
         Ein neuer Weg entsteht, <span>indem man ihn geht.</span>
     </div>
     <div class="footer-grid">
-        <div class="footer-col">
+        <div class="footer-col footer-logo-col">
             <img src="bilder/YogaJoy_Logo_transparent.png" alt="YogaJoy Logo" class="footer-logo">
-            <p style="color: var(--light); max-width: 320px;">Individuelles Yoga für mehr Lebensqualität, Schmerzfreiheit und innere Ruhe. In Bensberg und online.</p>
         </div>
         <div class="footer-col">
             <h4>Navigation</h4>
@@ -697,6 +803,18 @@
         localStorage.setItem('yogajoy_cookie_ok', 'true');
         cookieBanner.classList.remove('show');
     });
+
+    // About-More Toggle
+    const aboutToggle = document.getElementById('aboutToggle');
+    const aboutMore = document.getElementById('aboutMore');
+    if (aboutToggle && aboutMore) {
+        aboutToggle.addEventListener('click', () => {
+            const isOpen = aboutMore.classList.toggle('open');
+            aboutToggle.setAttribute('aria-expanded', isOpen);
+            aboutToggle.querySelector('.about-toggle-text').textContent =
+                isOpen ? 'Weniger anzeigen' : 'Meine Geschichte lesen';
+        });
+    }
 </script>
 
 </body>
