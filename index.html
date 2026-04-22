@@ -164,7 +164,9 @@
         .course-tag { font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; font-weight: 600; }
         .course-card h3 { font-size: 1.8rem; margin-bottom: 15px; color: var(--black); }
         .course-info { margin-bottom: 30px; flex: 1; }
-        .detail { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--fog); font-size: 0.9rem; gap: 10px; }
+        .detail { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--fog); font-size: 0.9rem; gap: 10px; align-items: center; }
+        .detail > span:last-child { text-align: right; white-space: nowrap; }
+        @media (max-width: 640px) { .detail { font-size: 0.82rem; } .detail > span:last-child { white-space: normal; } }
         .detail-label { color: var(--light); text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.1em; }
         .course-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 20px; gap: 15px; flex-wrap: wrap; }
         .price { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.8rem; color: var(--black); }
@@ -318,10 +320,11 @@
             .hamburger { display: flex; }
             section { padding: 80px 6%; }
             .about-second { padding: 80px 6%; }
-            .footer-grid { grid-template-columns: 1fr; text-align: center; }
-            .footer-logo-col { display: flex; flex-direction: column; align-items: center; }
+            .footer-grid { grid-template-columns: 1fr; text-align: left; gap: 40px; }
+            .footer-logo-col { display: flex; flex-direction: column; align-items: center; text-align: center; }
             .footer-tagline { display: none; }
-            .footer-links { display: inline-block; text-align: left; }
+            .footer-links { display: block; text-align: left; }
+            .footer-col h4 { text-align: left; }
             .btn-wa { bottom: 20px; right: 20px; padding: 10px 18px; font-size: 0.75rem; }
             .btn-wa svg { width: 16px; height: 16px; }
             nav { height: 85px; padding: 0 5%; justify-content: center; }
@@ -512,7 +515,7 @@
                 <span class="course-tag">Exklusiv · Yoga Specials</span>
                 <h3>Yoga Specials</h3>
                 <div class="course-info">
-                    <div class="detail"><span class="detail-label">Fokus</span><span>Freundinnen-Events & Familienyoga</span></div>
+                    <div class="detail"><span class="detail-label">Fokus</span><span>Freundinnen & Familienyoga</span></div>
                     <div class="detail"><span class="detail-label">Ort</span><span>Good Karma Club</span></div>
                     <div class="detail"><span class="detail-label">Ideal als</span><span>Geschenkidee</span></div>
                 </div>
@@ -633,7 +636,7 @@
             <div class="insta-event-box">
                 <div class="insta-event-row"><span class="insta-event-label">Wann</span><span>Samstag, 25. April 2026 · 16 – 18 Uhr</span></div>
                 <div class="insta-event-row"><span class="insta-event-label">Wo</span><span>Good Karma Club, Bensberg</span></div>
-                <div class="insta-event-row"><span class="insta-event-label">Preis</span><span>50 € inkl. Getränke</span></div>
+                <div class="insta-event-row"><span class="insta-event-label">Preis</span><span>49 € inkl. Getränke</span></div>
             </div>
             <div class="insta-cta-row">
                 <a href="mailto:yogajoy@web.de?subject=Anmeldung%20Selfcare%20Saturday%2025.04.2026" class="btn btn-accent">Jetzt anmelden</a>
