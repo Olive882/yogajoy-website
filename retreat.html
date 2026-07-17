@@ -152,6 +152,15 @@
         .place-benefits li:last-child { border-bottom: none; }
         .place-benefits li::before { content: '✓'; position: absolute; left: 0; top: 8px; color: var(--accent); font-weight: bold; }
 
+        /* Hotel-Galerie */
+        .hotel-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; max-width: 1150px; margin: 60px auto 0; }
+        .hotel-gallery figure { margin: 0; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); background: var(--white); }
+        .hotel-gallery img { width: 100%; height: 260px; object-fit: cover; display: block; transition: transform 0.5s; }
+        .hotel-gallery figure:hover img { transform: scale(1.04); }
+        .hotel-gallery figcaption { padding: 12px 16px; font-size: 0.85rem; color: var(--mid); text-align: center; }
+        .gallery-note { text-align: center; margin-top: 30px; color: var(--mid); font-size: 0.95rem; }
+        .gallery-note a { color: var(--accent-dark); font-weight: 500; }
+
         /* Ablauf */
         .schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; max-width: 1000px; margin: 0 auto; }
         .schedule-card { background: var(--white); border-radius: var(--radius); padding: 40px 30px; text-align: center; border: 1px solid var(--silver); transition: all 0.4s; }
@@ -270,7 +279,7 @@
     <div class="consent-box">
         <h3 id="waConsentTitle">Zu WhatsApp wechseln</h3>
         <p>Wenn du auf „Weiter zu WhatsApp" klickst, wirst du zu WhatsApp (Meta Platforms Ireland Ltd.) weitergeleitet. Dabei werden Daten wie deine IP-Adresse an WhatsApp übertragen. Weitere Infos findest du in unserer <a href="datenschutz.html" style="color:var(--accent)">Datenschutzerklärung</a>.</p>
-        <a href="https://wa.me/4915155528879?text=Hallo%20Martina%2C%20ich%20interessiere%20mich%20f%C3%BCr%20das%20Yoga%20%26%20Paint%20Retreat%20im%20Februar%202027." target="_blank" rel="noopener noreferrer" class="btn btn-primary">Weiter zu WhatsApp</a>
+        <a href="https://wa.me/4915155528879?text=Hallo%20Martina%2C%20ich%20m%C3%B6chte%20mich%20f%C3%BCr%20das%20Yoga%20%26%20Paint%20Retreat%20im%20Februar%202027%20anmelden." target="_blank" rel="noopener noreferrer" class="btn btn-primary">Weiter zu WhatsApp</a>
         <button class="btn btn-outline" id="waCancel">Abbrechen</button>
     </div>
 </div>
@@ -383,6 +392,17 @@
             </ul>
         </div>
     </div>
+
+    <div class="hotel-gallery">
+        <figure><img src="bilder/retreat-pool.jpg" alt="Infinity-Pool des Hotel Seegarten mit Blick über den Sorpesee" loading="lazy"><figcaption>Infinity-Pool mit Seeblick</figcaption></figure>
+        <figure><img src="bilder/retreat-sauna.jpg" alt="Panorama-Sauna mit Blick auf den Sorpesee" loading="lazy"><figcaption>Panorama-Sauna direkt am See</figcaption></figure>
+        <figure><img src="bilder/retreat-zimmer.jpg" alt="Modernes helles Hotelzimmer mit Doppelbett im Hotel Seegarten" loading="lazy"><figcaption>Moderne, helle Zimmer</figcaption></figure>
+        <figure><img src="bilder/retreat-bad.jpg" alt="Stilvolles Badezimmer mit runden Spiegeln und Terrazzo-Waschtisch" loading="lazy"><figcaption>Stilvolle Bäder</figcaption></figure>
+        <figure><img src="bilder/retreat-terrasse.jpg" alt="Terrasse mit Hängematte und Naturteich im Außenbereich des Hotels" loading="lazy"><figcaption>Entspannung im Außenbereich</figcaption></figure>
+        <figure><img src="bilder/retreat-restaurant.jpg" alt="Restaurant des Hotel Seegarten mit frischem Kräutergarten" loading="lazy"><figcaption>Restaurant mit eigenem Kräutergarten</figcaption></figure>
+        <figure><img src="bilder/retreat-kulinarik.jpg" alt="Fein angerichtetes Gericht aus der Küche von Sternekoch Olaf Baumeister" loading="lazy"><figcaption>Kulinarik auf Sterneniveau</figcaption></figure>
+    </div>
+    <p class="gallery-note">Noch mehr Einblicke, wie die Zimmer aussehen, findest du <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDczMDAzMzgxNTM0MDI1?story_media_id=3451387998232877024_3530544459" target="_blank" rel="noopener noreferrer">im Instagram-Highlight des Hotels</a>.</p>
 </section>
 
 <!-- ── ABLAUF ── -->
@@ -442,19 +462,26 @@
 
 <!-- ── KEINE VORKENNTNISSE ── -->
 <section class="noexp-section" data-aos>
-    <span class="section-label">Keine Vorkenntnisse nötig</span>
-    <p class="noexp-text">„Hier geht es nicht darum, etwas perfekt zu machen. Es geht darum, dir selbst mit Neugier, Leichtigkeit und Mitgefühl zu begegnen."</p>
-    <p class="noexp-sub">Du brauchst keinerlei Vorkenntnisse – weder im Yoga noch beim Zeichnen oder Malen. Manchmal reichen zwei Tage, um wieder zu spüren, was wirklich zählt: Zeit. Ruhe. Natur. Bewegung. Kreativität. Und echte Begegnungen mit Frauen, die sich – genau wie du – eine kleine Auszeit schenken möchten.</p>
+    <div class="place-grid" style="text-align: left;">
+        <div>
+            <img src="bilder/retreat-martina-malt.jpg" alt="Künstlerin malt an der Staffelei ein Blumenbild mit Kolibri und Schmetterlingen" loading="lazy" style="width:100%; border-radius: var(--radius); box-shadow: var(--shadow); display:block;">
+        </div>
+        <div>
+            <span class="section-label">Keine Vorkenntnisse nötig</span>
+            <p class="noexp-text" style="margin: 0 0 25px;">„Hier geht es nicht darum, etwas perfekt zu machen. Es geht darum, dir selbst mit Neugier, Leichtigkeit und Mitgefühl zu begegnen."</p>
+            <p class="noexp-sub" style="margin: 0;">Du brauchst keinerlei Vorkenntnisse – weder im Yoga noch beim Zeichnen oder Malen. In den Maleinheiten wirst du liebevoll angeleitet, Schritt für Schritt. Manchmal reichen zwei Tage, um wieder zu spüren, was wirklich zählt: Zeit. Ruhe. Natur. Bewegung. Kreativität. Und echte Begegnungen mit Frauen, die sich – genau wie du – eine kleine Auszeit schenken möchten.</p>
+        </div>
+    </div>
 </section>
 
 <!-- ── ANMELDUNG ── -->
 <section id="anmelden" class="signup-section" data-aos>
     <span class="section-label">Anmeldung</span>
     <h2 class="section-title">Sichere dir jetzt deinen Platz</h2>
-    <p class="signup-intro">Die Teilnehmerzahl ist bewusst klein gehalten, damit genügend Raum für persönliche Begleitung, individuelle Betreuung und eine vertrauensvolle Atmosphäre entsteht. Wir freuen uns darauf, dich kennenzulernen und deine Gastgeberinnen bei diesem besonderen Wochenende zu sein.</p>
+    <p class="signup-intro">Die Teilnehmerzahl ist bewusst klein gehalten, damit genügend Raum für persönliche Begleitung, individuelle Betreuung und eine vertrauensvolle Atmosphäre entsteht. Melde dich einfach per WhatsApp an – du bekommst dann alle Infos zur Bezahlung persönlich von uns. Wir freuen uns darauf, dich kennenzulernen und deine Gastgeberinnen bei diesem besonderen Wochenende zu sein.</p>
     <div class="signup-cta-row">
-        <a href="mailto:yogajoy@web.de?subject=Anmeldung%20Yoga%20%26%20Paint%20Retreat%20%C2%B7%2026.%E2%80%9328.%20Februar%202027" class="btn btn-accent">Per E-Mail anmelden</a>
-        <button class="btn btn-outline" id="waTrigger2" style="border-color: var(--beige-dark); color: var(--beige-text);">Per WhatsApp anfragen</button>
+        <button class="btn btn-accent" id="waTrigger2">Per WhatsApp anmelden</button>
+        <a href="mailto:yogajoy@web.de?subject=Anmeldung%20Yoga%20%26%20Paint%20Retreat%20%C2%B7%2026.%E2%80%9328.%20Februar%202027" class="btn btn-outline" style="border-color: var(--beige-dark); color: var(--beige-text);">Oder per E-Mail anmelden</a>
     </div>
     <p class="signup-small">Oder per DM auf Instagram: <a href="https://www.instagram.com/yogajoy_/" target="_blank" rel="noopener noreferrer">@yogajoy_</a></p>
 
