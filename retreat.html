@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yoga &amp; Paint Retreat am Sorpesee | 26.–28. Februar 2027 | YogaJoy</title>
-    <meta name="description" content="Yoga & Paint Retreat am Sorpesee, 26.–28. Februar 2027 im Hotel Seegarten, Sundern (Sauerland). Sanftes Yoga, Meditation, kreatives Malen & Zeichnen – ein Wochenende nur für dich. Jetzt Platz sichern.">
+    <meta name="description" content="Yoga & Paint Retreat am Sorpesee, 26.–28. Februar 2027 im Hotel Seegarten, Sundern (Sauerland). Sanftes Yoga, Meditation, kreatives Malen – ein Wochenende nur für dich. Jetzt Platz sichern.">
     <meta name="keywords" content="Yoga Retreat Sauerland, Yoga Retreat Sorpesee, Yoga und Malen, Yoga Paint Retreat, Frauen Retreat NRW, Wellness Wochenende Sauerland, Hotel Seegarten Sundern, YogaJoy, Martina Knieps">
     <meta name="author" content="Martina Knieps – YogaJoy">
     <meta name="robots" content="index, follow">
@@ -25,7 +25,7 @@
       "@context": "https://schema.org",
       "@type": "Event",
       "name": "Yoga & Paint Retreat am Sorpesee",
-      "description": "Ein Wochenende nur für dich: sanfte Yogaeinheiten, Meditation, Atem- und Achtsamkeitsübungen sowie kreative Mal- und Zeichenworkshops direkt am Sorpesee im Sauerland. Keine Vorkenntnisse nötig.",
+      "description": "Ein Wochenende nur für dich: sanfte Yogaeinheiten, Meditation, Atem- und Achtsamkeitsübungen sowie kreative Malworkshops direkt am Sorpesee im Sauerland. Keine Vorkenntnisse nötig.",
       "startDate": "2027-02-26",
       "endDate": "2027-02-28",
       "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
@@ -52,7 +52,7 @@
         },
         {
           "@type": "Offer",
-          "name": "Doppelzimmer (pro Person)",
+          "name": "Doppelzimmer S Design (pro Person)",
           "price": "615",
           "priceCurrency": "EUR",
           "availability": "https://schema.org/LimitedAvailability",
@@ -161,13 +161,15 @@
         .gallery-note { text-align: center; margin-top: 30px; color: var(--mid); font-size: 0.95rem; }
         .gallery-note a { color: var(--accent-dark); font-weight: 500; }
 
-        /* Ablauf */
-        .schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; max-width: 1000px; margin: 0 auto; }
-        .schedule-card { background: var(--white); border-radius: var(--radius); padding: 40px 30px; text-align: center; border: 1px solid var(--silver); transition: all 0.4s; }
-        .schedule-card:hover { transform: translateY(-8px); box-shadow: 0 20px 50px rgba(0,0,0,0.1); border-color: var(--accent); }
-        .schedule-day { font-size: 0.75rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; font-weight: 600; }
-        .schedule-card h3 { font-size: 1.6rem; color: var(--black); margin-bottom: 12px; }
-        .schedule-card p { color: var(--mid); font-size: 0.95rem; }
+        /* Gastgeberinnen */
+        .hosts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1000px; margin: 0 auto; }
+        .host-card { background: var(--white); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--silver); box-shadow: var(--shadow); transition: all 0.4s; }
+        .host-card:hover { transform: translateY(-8px); box-shadow: 0 20px 50px rgba(0,0,0,0.1); border-color: var(--accent); }
+        .host-card img { width: 100%; height: 420px; object-fit: cover; object-position: center top; display: block; }
+        .host-body { padding: 32px 34px 38px; }
+        .host-body h3 { font-size: 1.8rem; color: var(--black); margin-bottom: 14px; }
+        .host-body p { color: var(--mid); font-size: 0.98rem; margin-bottom: 14px; }
+        .host-body p:last-child { margin-bottom: 0; }
 
         /* Preis */
         .price-section { background: var(--beige); }
@@ -279,7 +281,7 @@
     <div class="consent-box">
         <h3 id="waConsentTitle">Zu WhatsApp wechseln</h3>
         <p>Wenn du auf „Weiter zu WhatsApp" klickst, wirst du zu WhatsApp (Meta Platforms Ireland Ltd.) weitergeleitet. Dabei werden Daten wie deine IP-Adresse an WhatsApp übertragen. Weitere Infos findest du in unserer <a href="datenschutz.html" style="color:var(--accent)">Datenschutzerklärung</a>.</p>
-        <a href="https://wa.me/4915155528879?text=Hallo%20Martina%2C%20ich%20m%C3%B6chte%20mich%20f%C3%BCr%20das%20Yoga%20%26%20Paint%20Retreat%20im%20Februar%202027%20anmelden." target="_blank" rel="noopener noreferrer" class="btn btn-primary">Weiter zu WhatsApp</a>
+        <a href="https://wa.me/491774453092?text=Hallo%20Martina%2C%20ich%20m%C3%B6chte%20mich%20f%C3%BCr%20das%20Yoga%20%26%20Paint%20Retreat%20im%20Februar%202027%20anmelden." target="_blank" rel="noopener noreferrer" class="btn btn-primary">Weiter zu WhatsApp</a>
         <button class="btn btn-outline" id="waCancel">Abbrechen</button>
     </div>
 </div>
@@ -316,8 +318,8 @@
 <!-- ── HERO ── -->
 <header class="retreat-hero">
     <div class="retreat-video-wrap">
-        <video autoplay muted loop playsinline preload="metadata" poster="bilder/retreat-poster.jpg" aria-label="Eindrücke vom Hotel Seegarten am Sorpesee">
-            <source src="bilder/retreat-reel.mp4" type="video/mp4">
+        <video autoplay muted loop playsinline preload="metadata" poster="bilder/retreat-video-poster.jpg" aria-label="Video-Eindrücke vom Yoga & Paint Retreat am Sorpesee">
+            <source src="bilder/retreat-video.mp4" type="video/mp4">
         </video>
     </div>
     <div class="retreat-hero-text">
@@ -328,10 +330,10 @@
             <span class="retreat-fact">📅 26.–28. Februar 2027</span>
             <span class="retreat-fact">📍 Hotel Seegarten · Sundern</span>
             <span class="retreat-fact">👥 Kleine Gruppe</span>
-            <span class="retreat-fact">💶 ab 615 € p. P.</span>
+            <span class="retreat-fact">💶 ab 649 € p. P.</span>
         </div>
-        <p class="intro">Stell dir vor, du beginnst den Tag mit sanftem Yoga, blickst mit einer warmen Tasse Kaffee auf den wunderschönen Sorpesee, atmest tief durch und schenkst dir Zeit – Zeit für dich, deinen Körper und deine Kreativität.</p>
-        <p class="intro">Beim Zeichnen und Malen geht es nicht um Perfektion. Es geht darum, den Kopf frei zu bekommen, Freude am Gestalten zu erleben und dich wieder mit deiner ureigensten Intuition zu verbinden.</p>
+        <p class="intro">Stell dir vor, du beginnst den Tag mit sanftem Yoga, blickst mit einer warmen Tasse Tee auf den wunderschönen Sorpesee, atmest tief durch und schenkst dir Zeit – Zeit für dich, deinen Körper und deine Kreativität.</p>
+        <p class="intro">Beim Malen geht es nicht um Perfektion. Es geht darum, den Kopf frei zu bekommen, Freude am Gestalten zu erleben und dich wieder mit deiner ureigensten Intuition zu verbinden.</p>
         <div class="retreat-cta-group">
             <a href="#anmelden" class="btn btn-accent">Jetzt Platz sichern</a>
             <a href="#erwartet-dich" class="btn btn-outline">Das erwartet dich</a>
@@ -348,7 +350,7 @@
     <ul class="check-list">
         <li>du dir eine bewusste Auszeit vom Alltag schenken möchtest.</li>
         <li>du Yoga in entspannter Atmosphäre kennenlernen oder vertiefen möchtest – ganz ohne Leistungsdruck.</li>
-        <li>du Kreativität liebst oder schon lange wieder einmal malen und zeichnen möchtest.</li>
+        <li>du Kreativität liebst oder schon lange wieder einmal malen möchtest.</li>
         <li>du das neue Jahr achtsam, bewusst und mit neuer Klarheit gestalten möchtest.</li>
         <li>du dir mehr Ruhe, Gelassenheit und Zeit für dich wünschst.</li>
         <li>du dich mit anderen Frauen austauschen und in einer wertschätzenden Atmosphäre verbinden möchtest.</li>
@@ -364,7 +366,7 @@
     <div class="expect-grid">
         <div class="expect-card"><span class="expect-icon">🧘‍♀️</span><p><strong>Sanfte Yogaeinheiten</strong> und achtsame Bewegung – für jedes Level</p></div>
         <div class="expect-card"><span class="expect-icon">🌬️</span><p><strong>Atem- und Achtsamkeitsübungen</strong>, Meditationen und Entspannungseinheiten</p></div>
-        <div class="expect-card"><span class="expect-icon">🎨</span><p><strong>Kreative Zeichen- und Maleinheiten</strong> – ganz ohne Vorkenntnisse, alle Materialien inklusive</p></div>
+        <div class="expect-card"><span class="expect-icon">🎨</span><p><strong>Kreative Malworkshops</strong> – ganz ohne Vorkenntnisse, alle Materialien inklusive</p></div>
         <div class="expect-card"><span class="expect-icon">🥐</span><p><strong>An zwei Tagen</strong> ein vitaler und genussvoller Brunch</p></div>
         <div class="expect-card"><span class="expect-icon">💬</span><p><strong>Inspirierende Gespräche</strong> und Austausch in einer kleinen Gruppe</p></div>
         <div class="expect-card"><span class="expect-icon">🌲</span><p><strong>Spaziergänge</strong> am wunderschönen Sorpesee – Natur direkt vor der Tür</p></div>
@@ -405,27 +407,30 @@
     <p class="gallery-note">Noch mehr Einblicke, wie die Zimmer aussehen, findest du <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDczMDAzMzgxNTM0MDI1?story_media_id=3451387998232877024_3530544459" target="_blank" rel="noopener noreferrer">im Instagram-Highlight des Hotels</a>.</p>
 </section>
 
-<!-- ── ABLAUF ── -->
-<section style="background: var(--white);" data-aos>
+<!-- ── DEINE GASTGEBERINNEN ── -->
+<section id="gastgeberinnen" style="background: var(--white);" data-aos>
     <div class="center">
-        <span class="section-label">Termin</span>
-        <h2 class="section-title">26.–28. Februar 2027</h2>
+        <span class="section-label">Wer dich begleitet</span>
+        <h2 class="section-title">Deine Gastgeberinnen</h2>
     </div>
-    <div class="schedule-grid">
-        <div class="schedule-card">
-            <div class="schedule-day">Tag 1</div>
-            <h3>Freitag</h3>
-            <p>Anreise und gemeinsames Ankommen</p>
+    <div class="hosts-grid">
+        <div class="host-card">
+            <img src="bilder/retreat-martina.jpg" alt="Martina Knieps – Yogalehrerin und Gastgeberin des Yoga & Paint Retreats" loading="lazy">
+            <div class="host-body">
+                <h3>Martina</h3>
+                <p>Ich bin Yogalehrerin aus Leidenschaft und begleite Menschen dabei, mehr Lebensfreude und positive Energie in ihr Leben zu bringen.</p>
+                <p>Ich bin gebürtige Kölnerin und lebe mit meiner Familie in Bergisch Gladbach.</p>
+                <p>Wenn ich nicht auf der Yogamatte bin, findest Du mich beim Walken im Wald, am Klavier oder in meinem Garten.</p>
+            </div>
         </div>
-        <div class="schedule-card">
-            <div class="schedule-day">Tag 2</div>
-            <h3>Samstag</h3>
-            <p>Yoga, Kreativität, Entspannung und Zeit für dich</p>
-        </div>
-        <div class="schedule-card">
-            <div class="schedule-day">Tag 3</div>
-            <h3>Sonntag</h3>
-            <p>Gemeinsamer Abschluss und Abreise</p>
+        <div class="host-card">
+            <img src="bilder/retreat-petra.jpg" alt="Petra – Künstlerin und Gastgeberin des Yoga & Paint Retreats, beim Malen an der Staffelei" loading="lazy">
+            <div class="host-body">
+                <h3>Petra</h3>
+                <p>Kreativität begleitet mich schon mein ganzes Leben. Durch meine Ausbildung zur Modedesignerin und meine Arbeit beim Theater, Film und in der Werbung durfte ich weltweit kreativ tätig sein.</p>
+                <p>Meine Liebe zur Malerei habe ich mit einem Kunststudium am Milan Art Institute in Florida weiter vertieft.</p>
+                <p>Diese Freude am kreativen Ausdruck möchte ich mit Frauen teilen, die spüren, dass noch mehr in ihnen steckt. Gemeinsam schaffen wir Raum für Intuition, Klarheit und neue Perspektiven.</p>
+            </div>
         </div>
     </div>
 </section>
@@ -434,27 +439,29 @@
 <section id="preis" class="price-section" data-aos>
     <div class="center">
         <span class="section-label">Deine Investition</span>
-        <h2 class="section-title">Alles drin für dein Wochenende</h2>
+        <h2 class="section-title">Deine Investition in Dich</h2>
     </div>
     <div class="price-box">
         <div class="price-head">
             <div class="price-big">649 €<span> pro Person</span></div>
-            <p>Zwei Übernachtungen · Brunch · Yoga · Kreativ-Workshops</p>
+            <p>Zwei Übernachtungen · Brunch · Yoga · Malworkshops</p>
         </div>
         <div class="price-body">
             <h4>Im Preis enthalten</h4>
             <ul class="price-incl">
                 <li>Zwei Übernachtungen im modernen Einzelzimmer</li>
-                <li>2 × Verwöhnbrunch</li>
+                <li>2 × Verwöhnbrunch im exklusiven Esszimmer</li>
+                <li>Vitaler Mittagssnack am Samstag</li>
+                <li>Alle Getränke während der Workshops (Wasser, Softgetränke, Kaffee, Tee)</li>
                 <li>Alle Yogaeinheiten</li>
-                <li>Alle Kreativ-Workshops inkl. sämtlicher Materialien</li>
+                <li>Alle Malworkshops inkl. sämtlicher Materialien</li>
                 <li>Meditationen sowie Entspannungs- und Achtsamkeitseinheiten</li>
             </ul>
             <div class="price-note">
                 <strong>Nicht im Preis enthalten:</strong> das Abendessen am Freitag und Samstag – diese Mahlzeiten werden individuell direkt im Hotel bezahlt.
             </div>
             <div class="price-duo">
-                💕 <strong>Du möchtest mit einer Freundin kommen?</strong> Dann zahlt ihr im Doppelzimmer nur <strong>615 € pro Person</strong>.
+                💕 <strong>Du möchtest mit einer Freundin kommen?</strong> Dann beträgt der Preis für das Retreat im Doppelzimmer (S&nbsp;Design) <strong>615 € pro Person</strong>.
             </div>
         </div>
     </div>
@@ -462,16 +469,9 @@
 
 <!-- ── KEINE VORKENNTNISSE ── -->
 <section class="noexp-section" data-aos>
-    <div class="place-grid" style="text-align: left;">
-        <div>
-            <img src="bilder/retreat-martina-malt.jpg" alt="Künstlerin malt an der Staffelei ein Blumenbild mit Kolibri und Schmetterlingen" loading="lazy" style="width:100%; border-radius: var(--radius); box-shadow: var(--shadow); display:block;">
-        </div>
-        <div>
-            <span class="section-label">Keine Vorkenntnisse nötig</span>
-            <p class="noexp-text" style="margin: 0 0 25px;">„Hier geht es nicht darum, etwas perfekt zu machen. Es geht darum, dir selbst mit Neugier, Leichtigkeit und Mitgefühl zu begegnen."</p>
-            <p class="noexp-sub" style="margin: 0;">Du brauchst keinerlei Vorkenntnisse – weder im Yoga noch beim Zeichnen oder Malen. In den Maleinheiten wirst du liebevoll angeleitet, Schritt für Schritt. Manchmal reichen zwei Tage, um wieder zu spüren, was wirklich zählt: Zeit. Ruhe. Natur. Bewegung. Kreativität. Und echte Begegnungen mit Frauen, die sich – genau wie du – eine kleine Auszeit schenken möchten.</p>
-        </div>
-    </div>
+    <span class="section-label">Keine Vorkenntnisse nötig</span>
+    <p class="noexp-text">„Hier geht es nicht darum, etwas perfekt zu machen. Es geht darum, dir selbst mit Neugier, Leichtigkeit und Mitgefühl zu begegnen."</p>
+    <p class="noexp-sub">Du brauchst keinerlei Vorkenntnisse – weder im Yoga noch beim Malen. In den Malworkshops wirst du liebevoll angeleitet, Schritt für Schritt. Manchmal reichen zwei Tage, um wieder zu spüren, was wirklich zählt: Zeit. Ruhe. Natur. Bewegung. Kreativität. Und echte Begegnungen mit Frauen, die sich – genau wie du – eine kleine Auszeit schenken möchten.</p>
 </section>
 
 <!-- ── ANMELDUNG ── -->
